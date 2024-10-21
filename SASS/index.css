@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #0F1830;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#portfolio .container {
+  width: 100%;
+  max-width: 1250px;
+  padding: 90px 85px;
+  margin: 0 auto;
+}
+#portfolio .container .portfolio-left-wrapper {
+  width: 100%;
+  height: 80vh;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+  height: 35%;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-info-wrapper h1 {
+  color: white;
+  font-size: 3em;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-info-wrapper h2 {
+  font-size: 1.4em;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-info-wrapper p {
+  color: rgb(180, 176, 176);
+  width: 250px;
+  line-height: 1.3;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-page-titles {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-page-titles a {
+  text-decoration: none;
+  color: rgb(180, 176, 176);
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  line-height: 2;
+  font-size: 14px;
+}
+#portfolio .container .portfolio-left-wrapper .portfolio-page-titles a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 2px;
+  background-color: rgb(180, 176, 176);
+}
+#portfolio .container .portfolio-left-wrapper .social-media-icons {
+  width: 100%;
+  height: 10%;
+}
+#portfolio .container .portfolio-left-wrapper .social-media-icons ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+#portfolio .container .portfolio-right-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#portfolio .container .portfolio-right-wrapper .user-background-info {
+  margin-bottom: 120px;
+}
+#portfolio .container .portfolio-right-wrapper .user-background-info p {
+  line-height: 1.5;
+  margin-bottom: 2%;
+  font-size: 17px;
+  color: rgb(180, 176, 176);
+}
+#portfolio .container .portfolio-right-wrapper .user-background-info p a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-duration-wrapper {
+  font-size: 12px;
+  width: 22%;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper {
+  width: 78%;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper .job-title {
+  margin-bottom: 6px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper .job-subtitle {
+  color: gray;
+  width: 130px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper .job-description p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper .job-skills {
+  margin-top: 10px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-card .job-text-wrapper .job-skills button {
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #153150;
+  color: #4FC4C2;
+  border: none;
+  font-weight: bold;
+  margin: 5px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-info-footer-text {
+  display: flex;
+  gap: 5px;
+}
+#portfolio .container .portfolio-right-wrapper .user-job-info .job-info-footer-text img {
+  width: 20px;
+  height: 20px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-img-wrapper {
+  width: 30%;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-img-wrapper img {
+  width: 120px;
+  height: 90px;
+  border-radius: 5px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-info-text-wrapper {
+  width: 70%;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-info-text-wrapper .project-title {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-info-text-wrapper .project-title h4 {
+  display: inline;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-info-text-wrapper .project-title img {
+  width: 20px;
+  height: 20px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-card .project-info-text-wrapper .project-description p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-info-footer-text {
+  display: flex;
+  gap: 5px;
+}
+#portfolio .container .portfolio-right-wrapper .user-project-shortcuts .project-info-footer-text img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.3333333333%;
+  }
+  .col-xl-2 {
+    width: 16.6666666667%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.3333333333%;
+  }
+  .col-xl-5 {
+    width: 41.6666666667%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.3333333333%;
+  }
+  .col-xl-8 {
+    width: 66.6666666667%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.3333333333%;
+  }
+  .col-xl-11 {
+    width: 91.6666666667%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */
